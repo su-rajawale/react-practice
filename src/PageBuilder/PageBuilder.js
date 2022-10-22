@@ -78,8 +78,8 @@ function PageBuilder() {
     return (
         <section id='pagebuilder'>
             <article>
-                <div class="panel__top">
-                    <div class="panel__basic-actions"></div>
+                <div className="panel__top">
+                    <div className="panel__basic-actions"></div>
                 </div>
                 <div className='editor-window'>
                     <div className='canvas' id='gjs'>

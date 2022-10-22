@@ -19,19 +19,19 @@ function App() {
     <div>
       <main id='app'>
         <Routes>
+        <Route exact path='*' element={<NotFound />} />
           <Route path='/home' element={<Layout />}>
-            <Route exact path='*' element={<NotFound />} />
-            <Route exact path='/home/markdown' element={<Markdown />} />
-            <Route exact path='/home/nested' element={<Nested />} />
-            <Route exact path='/home/photos' element={<Products />} />
-            <Route exact path='/home/dragndrop' element={<Dragndrop />} />
-            <Route exact path='/home/users' element={<Users />} />
-            <Route exact path='/home/uboard' element={<UBoard />} />
-            <Route exact path='/home/pagebuilder' element={<PageBuilder />} />
-            <Route exact path='/home/invite' element={<Invite />} />
-            <Route exact path='/home/users/user/:id' element={<User />} />
+            <Route exact path='markdown' element={<Markdown />} />
+            <Route exact path='nested' element={<Nested />} />
+            <Route exact path='photos' element={<Products />} />
+            <Route exact path='dragndrop' element={<Dragndrop />} />
+            <Route exact path='users' element={<Users />} />
+            <Route exact path='uboard' element={<UBoard />} />
+            <Route exact path='pagebuilder' element={<PageBuilder />} />
+            <Route exact path='invite' element={<Invite />} />
+            <Route exact path='users/user/:id' element={<User />} />
           </Route>
-          <Route index element={<Forms />} />
+          <Route path='/' element={<Forms />} />
         </Routes>
       </main>
     </div>

@@ -162,7 +162,7 @@ function Nested() {
       <button onClick={()=> dispach({type: 'increment'})}>+</button>
       <button onClick={()=> dispach({type: 'decrement'})}>-</button> */}
 
-      <div className="table" style={{ padding: "4rem" }}>
+      <div className="table">
         <header style={{ marginBottom: "2rem" }}>
           <h1>Prestations</h1>
           <button onClick={() => setCollapseAll(!collapseAll)}>

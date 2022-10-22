@@ -7,4 +7,5 @@
 #outlet {
     flex: 1;
     overflow-y: scroll;
+    padding: 1.5rem;
 }
